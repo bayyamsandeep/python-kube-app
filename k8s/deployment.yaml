@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-kube-app
+  namespace: sandbox
+  labels:
+    app: python-kube-app
+spec:
+  selector:
+    matchLabels:
+      app: python-kube-app
+  template:
+    metadata:
+      labels:
+        app: python-kube-app
+    spec:
+      containers:
+        - name: container-0
+          image: bayyamsandeep/python-kube-app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+              name: http
+              protocol: TCP
+          resources: {}
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always

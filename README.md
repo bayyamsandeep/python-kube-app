@@ -1,2 +1,2 @@
-# python-kune-app
+# python-kube-app
 Repo for Python-Kube-App

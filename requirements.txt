@@ -1,2 +1,2 @@
 fastapi
-uvicorn===0.22.0
+uvicorn

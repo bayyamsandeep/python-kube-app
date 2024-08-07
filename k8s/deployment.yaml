@@ -6,6 +6,7 @@ metadata:
   labels:
     app: python-kube-app
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: python-kube-app
@@ -20,8 +21,3 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-              name: http
-              protocol: TCP
-          resources: {}
-      dnsPolicy: ClusterFirst
-      restartPolicy: Always

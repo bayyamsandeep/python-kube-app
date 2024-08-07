@@ -6,10 +6,9 @@ metadata:
 spec:
   ports:
     - name: http
-      port: 80
+      port: 8080
       protocol: TCP
       targetPort: 8080           # Ensure this matches the port exposed by your Flask app in the Deployment
   selector:
     app: python-kube-app
-  sessionAffinity: None
   type: LoadBalancer            # Exposes the service externally using a cloud provider’s load balancer

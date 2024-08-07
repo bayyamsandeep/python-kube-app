@@ -14,16 +14,12 @@ def read_root():
 def get_users():
         return [
                     {
-                        "Name": "Mary Johnson",
-                        "Address": "456 Oak Ave",
-                        "City": "Los Angeles",
-                        "Age": 25,
-                        "Email": "mary.j@email.com",
-                        "Phone": "(555) 987-6543",
-                        "Hobbies": [
-                            "Painting",
-                            "Photography"
-                        ],
+                        "Name": "Sandeep Bayyam",
+                        "Address": "Uppal",
+                        "City": "Hyderabad",
+                        "Age": 27,
+                        "Email": "sandeep@digitaldots.ai",
+                        "Phone": "9177704023",
                         "createdAt": "2024-01-12T10:45:00Z",
                         "AdditionalInfo": 12345
                     }
